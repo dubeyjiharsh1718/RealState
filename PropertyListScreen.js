@@ -24,7 +24,7 @@ function PropertyListScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Property Listings</Text>
-      <Button title={`Sort by Price ${sortByPriceAscending ? 'Ascending' : 'Descending'}`} onPress={toggleSortOrder} />
+      {/* <Button title={`Sort by Price ${sortByPriceAscending ? 'Ascending' : 'Descending'}`} onPress={toggleSortOrder} /> */}
       <FlatList
         data={propertyData}
         keyExtractor={(item) => item.id}
